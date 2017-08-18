@@ -1,0 +1,39 @@
+// Card Component
+const Card = (props) => {
+	return(
+  	<div style={{margin: '1em'}}>
+      <img width="75" src={props.avatar_url} />
+      <div style={{display: 'inline-block', marginLeft: 10}}>
+        <div style={{fontSize: '1.25em', fontWeight:'bold'}}> {props.name} </div>
+        <div> {props.company} </div>
+      </div>
+    </div>
+  );
+};
+
+// Card List Data
+let data = [
+	{
+  name: "Govind Jha",
+        avatar_url: "https://avatars2.githubusercontent.com/u/5808964?v=4",
+        company: "Sapient Global Markets"
+  },
+  {
+  name: "Mich Flower",
+        avatar_url: "https://avatars3.githubusercontent.com/u/5238614?v=4",
+        company: "Facebook"  
+  }
+];
+
+
+// Card List Component
+const CardList = (props) => {
+	return(
+  	<div>
+      {props.gitData.map( userData => <Card {...userData} />)}
+    </div>
+  );
+};
+
+// Render to DOM
+ReactDOM.render(<CardList gitData= {data}/>, mountNode);
