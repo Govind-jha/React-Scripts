@@ -1,2 +1,2 @@
 # React-Scripts-
-This repo hold the scripts I wrote while learning react.
+___This repo holds the scripts I wrote while learning react.___
