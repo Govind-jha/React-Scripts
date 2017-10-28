@@ -1,2 +1,2 @@
 # React-Scripts-
-___This repo holds the scripts I wrote while learning react.___
+___This repo is like my react playground.___
